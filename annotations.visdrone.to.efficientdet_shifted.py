@@ -5,7 +5,7 @@ from PIL import Image
 #/content/drive/Shareddrives/Dataset UAV/Iga/Tensorflow/VisDrone2019-DET-train
 
 
-root_dir = "Tensorflow/VisDrone2019-DET-train/"
+root_dir = "D:/codingan_serius/dataset/VisDrone2019-DET-train/"
 annotations_dir = root_dir+"annotations/"
 image_dir = root_dir + "images/"
 xml_dir = root_dir+"annotations_xml_shifted/"
