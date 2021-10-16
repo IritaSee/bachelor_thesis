@@ -1,0 +1,3 @@
+*.xml
+./Tensorflow/models
+./tfrecords
