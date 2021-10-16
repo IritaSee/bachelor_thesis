@@ -1,4 +1,5 @@
 *.xml
 ./Tensorflow
 ./tfrecords
-./Tensorflow/VisDrone2019-DET-train
+./Tensorflow/VisDrone2019-DET-train/*
+
