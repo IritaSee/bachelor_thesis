@@ -8,3 +8,8 @@ colab/automl/efficientdet/VOCtrainval_11-May-2012.tar
 colab/automl/efficientdet/VOCdevkit
 colab/automl/efficientdet/savedmodel
 colab/automl/efficientdet/tfrecord
+colab/automl/model_dir
+colab/automl/saved_own_model
+colab/automl/saved_own_model_new
+colab/efficientdet-*
+colab/efficientnet-*
