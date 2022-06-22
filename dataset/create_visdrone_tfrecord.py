@@ -21,10 +21,6 @@ Example usage:
 
 PYTHONPATH=".:$PYTHONPATH" python dataset/create_visdrone_tfrecord.py  --data_dir=/media/inn/Files/datasets/VisDrone/train/  \
         --year=VOC2012 --train --output_path=/media/inn/Files/automl/efficientdet/tfrecord_visdrone/train/
-
-python3 create_visdrone_tfrecord.py  --data_dir=./Tensorflow/VisDrone2019-DET-val/  \
-        --year=VOC2012 --train --output_path=./colab/automl/efficientdet/tfrecord_visdrone/val/
-      
 """
 from __future__ import absolute_import
 from __future__ import division
@@ -40,8 +36,8 @@ from lxml import etree
 import PIL.Image
 import tensorflow.compat.v1 as tf
 
-from dataset import tfrecord_util
-
+# from dataset import tfrecord_util
+import tfrecord_util
 
 flags = tf.app.flags
 flags.DEFINE_string('data_dir', '', 'Root directory to raw PASCAL VOC dataset.')
@@ -257,7 +253,7 @@ def main(_):
     #                              'aeroplane_' + FLAGS.set + '.txt')
     #examples_path = "/media/inn/Files/automl/efficientdet/VOCdevkit/VOC2012/ImageSets/Main/aeroplane_train.txt"    
     # annotations_dir = os.path.join(data_dir, year, FLAGS.annotations_dir)
-    annotations_dir = "./Tensorflow/VisDrone2019-DET-val/annotations_xml"
+    annotations_dir = "D:/codingan_serius/bachelor_thesis/Tensorflow/VisDrone2019-DET-train/annotations_xml"
     
     #examples_list = tfrecord_util.read_examples_list(examples_path)
 

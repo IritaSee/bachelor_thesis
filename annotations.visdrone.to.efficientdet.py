@@ -5,12 +5,12 @@ from PIL import Image
 #/content/drive/Shareddrives/Dataset UAV/Iga/Tensorflow/VisDrone2019-DET-train
 
 
-root_dir = "Tensorflow/VisDrone2019-DET-train/"
+root_dir = "./Tensorflow/VisDrone2019-DET-val/"
 annotations_dir = root_dir+"annotations/"
 image_dir = root_dir + "images/"
 xml_dir = root_dir+"annotations_xml/"
 class_name = ['ignored regions','pedestrian','people','bicycle','car','van','truck','tricycle','awning-tricycle','bus','motor','others']
-file_yolo = "train.txt"
+file_yolo = "val.txt"
 for filename in os.listdir(annotations_dir):
     fin = open(annotations_dir+filename, 'r')
     image_name = filename.split('.')[0]
