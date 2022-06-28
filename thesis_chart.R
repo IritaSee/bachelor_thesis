@@ -1,11 +1,12 @@
 # Read values from tab-delimited autos.dat 
-autos_data <- read.table("autos.dat", header=T, sep="\t")
+autos_data <- read.csv("result_AR100.csv")
 
 # Graph autos with adjacent bars using rainbow colors
-barplot(as.matrix(autos_data), main="Autos", ylab= "Total",
+plot<-barplot(as.matrix(autos_data), main="Result: AR max 100", ylab= "Total",
         beside=TRUE, col=rainbow(5))
 
 # Place the legend at the top-left corner with no frame  
 # using rainbow colors
-legend("topleft", c("Mon","Tue","Wed","Thu","Fri"), cex=0.6, 
+legend("topleft", c("10 Epochs","20 Epochs", "30 Epochs", "40 Epochs", "50 Epochs"), cex=0.6, 
        bty="n", fill=rainbow(5));
+#text(plot, 0, autos_data,cex=0.3,pos=3) 
