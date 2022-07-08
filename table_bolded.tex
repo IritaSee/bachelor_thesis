@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[normalem]{ulem}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{booktabs}
+
+
+\begin{document}
+\begin{table}
+\centering
+\setlength{\extrarowheight}{0pt}
+\addtolength{\extrarowheight}{\aboverulesep}
+\addtolength{\extrarowheight}{\belowrulesep}
+\setlength{\aboverulesep}{0pt}
+\setlength{\belowrulesep}{0pt}
+\caption{EfficientDet D0 Result with SGD and Adam optimiser}
+\begin{tabular}{cl|llllll} 
+\toprule
+\multicolumn{1}{l}{epochs} & optimiser                               & AP50                                      & AP75                                      & AP                                                 & ARmax1                                                     & ARmax10                                            & ARmax100                                            \\ 
+\hline
+\multirow{2}{*}{10}        & {\cellcolor[rgb]{0.788,0.788,0.788}}SGD & {\cellcolor[rgb]{0.788,0.788,0.788}}0.018 & {\cellcolor[rgb]{0.788,0.788,0.788}}0.006 & {\cellcolor[rgb]{0.788,0.788,0.788}}0.046          & {\cellcolor[rgb]{0.788,0.788,0.788}}\textbf{0.009}         & {\cellcolor[rgb]{0.788,0.788,0.788}}\textbf{0.026} & {\cellcolor[rgb]{0.788,0.788,0.788}}0.033           \\
+                           & Adam                                    & 0.025                                     & 0.01                                      & 0.058                                              & \textbf{0.009}                                             & \textbf{0.031}                                     & 0.039                                               \\
+\multirow{2}{*}{20}        & {\cellcolor[rgb]{0.788,0.788,0.788}}SGD & {\cellcolor[rgb]{0.788,0.788,0.788}}0.012 & {\cellcolor[rgb]{0.788,0.788,0.788}}0.002 & {\cellcolor[rgb]{0.788,0.788,0.788}}0.024          & {\cellcolor[rgb]{0.788,0.788,0.788}}\textbf{0.003}         & {\cellcolor[rgb]{0.788,0.788,0.788}}\textbf{0.01}  & {\cellcolor[rgb]{0.788,0.788,0.788}}0.014           \\
+                           & Adam                                    & 0.039                                     & 0.02                                      & 0.105                                              & \textbf{\uline{0.018}}                                     & \textbf{0.043}                                     & 0.052                                               \\
+\multirow{2}{*}{30}        & {\cellcolor[rgb]{0.788,0.788,0.788}}SGD & {\cellcolor[rgb]{0.788,0.788,0.788}}0.037 & {\cellcolor[rgb]{0.788,0.788,0.788}}0.017 & {\cellcolor[rgb]{0.788,0.788,0.788}}0.09           & {\cellcolor[rgb]{0.788,0.788,0.788}}\textbf{\uline{0.015}} & {\cellcolor[rgb]{0.788,0.788,0.788}}\textbf{0.04}  & {\cellcolor[rgb]{0.788,0.788,0.788}}0.05            \\
+                           & Adam                                    & 0.043                                     & 0.02                                      & 0.093                                              & \textbf{\uline{0.018}}                                     & \textbf{0.05}                                      & \textbf{0.059}                                      \\
+\multirow{2}{*}{40}        & {\cellcolor[rgb]{0.788,0.788,0.788}}SGD & {\cellcolor[rgb]{0.788,0.788,0.788}}0.041 & {\cellcolor[rgb]{0.788,0.788,0.788}}0.018 & {\cellcolor[rgb]{0.788,0.788,0.788}}0.098          & {\cellcolor[rgb]{0.788,0.788,0.788}}\textbf{\uline{0.017}} & {\cellcolor[rgb]{0.788,0.788,0.788}}\textbf{0.045} & {\cellcolor[rgb]{0.788,0.788,0.788}}\textbf{0.055}  \\
+                           & Adam                                    & 0.049                                     & 0.024                                     & \textbf{0.122}                                     & \textbf{\uline{0.021}}                                     & \textbf{0.05}                                      & \textbf{0.059}                                      \\
+\multirow{2}{*}{50}        & {\cellcolor[rgb]{0.788,0.788,0.788}}SGD & {\cellcolor[rgb]{0.788,0.788,0.788}}0.041 & {\cellcolor[rgb]{0.788,0.788,0.788}}0.022 & {\cellcolor[rgb]{0.788,0.788,0.788}}\textbf{0.116} & {\cellcolor[rgb]{0.788,0.788,0.788}}\textbf{\uline{0.018}} & {\cellcolor[rgb]{0.788,0.788,0.788}}\textbf{0.045} & {\cellcolor[rgb]{0.788,0.788,0.788}}\textbf{0.056}  \\
+                           & Adam                                    & 0.052                                     & 0.026                                     & \textbf{0.11}                                      & \textbf{\uline{0.021}}                                     & \textbf{0.054}                                     & \textbf{0.066}                                      \\
+\bottomrule
+\label{result}
+\end{tabular}
+\end{table}
+\end{document}
